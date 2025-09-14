@@ -2,29 +2,50 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 750px) {
+    .box1, .box2, .about-me, .ex, .education {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 body {
     font-family: "Cal Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: green;
+    background-image: url("IMG_4476.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+
 h1 {
     font-size: 150px;
+    gap: 40px;
 }
 
 .hero {
-    height: 100vh;
-    background: green;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-image: url("IMG_1526.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
+section {
+    margin-bottom: 150px;
+
+}
 .box1 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px
+    gap: 20px;
+
 }
 
 a {
@@ -33,34 +54,66 @@ a {
 }
 
 a:hover {
-    color: pink;
+    color: lightpink;
     text-decoration: underline;
 }
 .box2 ul {
     display: flex;
     align-items: center;
-    gap: 100px;
-    background: green;
+    gap: 50px;
+    background: lightskyblue;
 }
 
 .box2 {
-    font-size: 31px;
+    font-size: 50px;
 }
 
 .about-me {
     display: flex;
     align-items: center;
-    gap: 50px;
-}
+    gap: 10px;
 
+.about-me img {
+    border-color: cadetblue;
+    border-radius: 20px;
+
+    }
+p {
+    font-size: 31px;
+    color: black;
+    background-color:lightpink;
+    }
+
+}
 .ex {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
+p {
+    font-size: 31px;
+    background-color: lightskyblue;
+}
 }
 
 .education {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     gap: 50px;
+    ul{
+        font-size: 31px;
+        background-color: lightpink;
+    }
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    background: lightskyblue;
+}
+footer {
+    font-size: 31px;
+
 }
